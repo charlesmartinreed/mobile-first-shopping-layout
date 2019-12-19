@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <title>Mobile-first Shopping Example</title>
+  </head>
+  <body>
+    <!-- splash image, seen when app is opened -->
+    <div id="splash-display">
+      <div id="splash-text-container">
+        <h1 id="splash-text">Shop Meet</h1>
+        <p>The couple that shops together, drops together.</p>
+      </div>
+    </div>
+    <script>
+      let splash = document.getElementById("splash-display");
+
+      setInterval(() => {
+        splash.classList.add("fadeOut");
+      }, 3000);
+    </script>
+  </body>
+</html>

@@ -12,21 +12,32 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     />
-    <title>Mobile-first Shopping Example</title>
+    <title>Shop Meet.</title>
   </head>
   <body>
     <!-- splash image, seen when app is opened -->
-    <div id="splash-display">
+    <!-- <div id="splash-display">
       <div id="splash-text-container">
         <h1 id="splash-text">Shop Meet</h1>
         <p>The couple that shops together, drops together.</p>
       </div>
+    </div> -->
+
+    <!-- everything except the footer goes in content -->
+    <div class="content">
+      <!-- header section contains logo and search input -->
+      <header class="app-header">
+        <div class="container">
+          <div class="logo"><span>S</span><span>M</span></div>
+          <input type="text" class="search-input" placeholder="Find me a..." />
+        </div>
+      </header>
     </div>
     <script>
       let splash = document.getElementById("splash-display");
 
       setInterval(() => {
-        splash.classList.add("fadeOut");
+        // splash.classList.add("fadeOut");
       }, 3000);
     </script>
   </body>

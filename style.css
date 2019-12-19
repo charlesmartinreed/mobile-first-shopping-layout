@@ -158,7 +158,7 @@ html {
   position: relative;
   min-height: 6vh;
   padding: 1.5rem;
-  margin: -0.3rem auto;
+  margin: -0.3rem auto 0.8rem;
   box-shadow: 0 0 2em rgba(0, 0, 0, 0.3);
 }
 
@@ -208,4 +208,53 @@ html {
 
 .subheader-update-link:hover {
   color: red;
+}
+
+/* PROFILE GRIDS STYLING */
+
+.grid-profiles {
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.grid-profiles .grid-item h4,
+.grid-profiles .grid-item p {
+  margin: 0.3rem 0;
+}
+
+.grid-profiles .grid-item h4 {
+  color: rgb(175, 68, 68);
+  font-weight: 800;
+}
+
+.grid-profiles .grid-item p {
+  color: rgb(16, 16, 16);
+  color: whitesmoke;
+  font-weight: 400;
+}
+
+.grid-profiles .grid-item p:last-of-type {
+  font-size: 0.7rem;
+}
+
+.grid-profiles .grid-item {
+  /* background-color: white; */
+  /* height: 50%; */
+  /* width: 50%; */
+  text-align: center;
+  background-color: rgb(41, 41, 41);
+  border-bottom: 5px solid rgb(187, 141, 26);
+  box-shadow: 0 0 3rem rgba(32, 32, 32, 0.6);
+  border-radius: 12px;
+}
+
+.grid-profiles .grid-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin: 0.5rem;
+  border-radius: 50%;
 }

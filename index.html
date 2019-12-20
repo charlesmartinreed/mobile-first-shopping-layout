@@ -16,12 +16,12 @@
   </head>
   <body>
     <!-- splash image, seen when app is opened -->
-    <!-- <div id="splash-display">
+    <div id="splash-display">
       <div id="splash-text-container">
         <h1 id="splash-text">Shop Meet</h1>
         <p>The couple that shops together, drops together.</p>
       </div>
-    </div> -->
+    </div>
 
     <!-- everything except the footer goes in content -->
     <div class="content">
@@ -108,10 +108,12 @@
     </div>
     <script>
       let splash = document.getElementById("splash-display");
+      let appContent = document.querySelector(".content");
       let footer = document.querySelector(".app-footer");
 
       setInterval(() => {
-        // splash.classList.add("fadeOut");
+        splash.classList.add("fadeOut");
+        appContent.classList.add("visible");
       }, 3000);
 
       window.addEventListener("scroll", e => {

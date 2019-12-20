@@ -70,6 +70,30 @@
           <p>6 mi. away</p>
           <img src="/imgs/female-profile-pic-2.jpg" alt="" />
         </div>
+        <div class="grid-item">
+          <h4>Caleb Jacobson</h4>
+          <p>33 years old</p>
+          <p>5 mi. away</p>
+          <img src="/imgs/male-profile-pic.jpg" alt="" />
+        </div>
+        <div class="grid-item">
+          <h4>Marissa Reid</h4>
+          <p>26 years old</p>
+          <p>8 mi. away</p>
+          <img src="/imgs/female-profile-pic.jpg" alt="" />
+        </div>
+        <div class="grid-item">
+          <h4>Gunst Byerson</h4>
+          <p>41 years old</p>
+          <p>3 mi. away</p>
+          <img src="/imgs/male-profile-pic-2.jpg" alt="" />
+        </div>
+        <div class="grid-item">
+          <h4>Ashley Hesse</h4>
+          <p>19 years old</p>
+          <p>6 mi. away</p>
+          <img src="/imgs/female-profile-pic-2.jpg" alt="" />
+        </div>
       </div>
       <!-- profiles grid ends here -->
 
@@ -84,10 +108,20 @@
     </div>
     <script>
       let splash = document.getElementById("splash-display");
+      let footer = document.querySelector(".app-footer");
 
       setInterval(() => {
         // splash.classList.add("fadeOut");
       }, 3000);
+
+      window.addEventListener("scroll", e => {
+        footer.classList.add("hidden");
+        // console.log(window.scrollY);
+      });
+
+      setInterval(() => {
+        footer.classList.remove("hidden");
+      }, 1500);
     </script>
   </body>
 </html>
